@@ -1,0 +1,38 @@
+<div class="contact p-3">
+    <div class="container">
+
+        <div class="contact-title text-center my-2">
+            <h2>Contact</h2>
+            <span class="contact-icon my-3 position-relative">
+                <i class="fa-solid fa-star fa-2x"></i>
+            </span>
+        </div>
+
+        <div class="contact-form w-75 mx-auto">
+            <form action="">
+
+                <div class="userName">
+                    <label>Name</label>
+                    <input #name (keyup)="showLabel(name)" type="text" class="form-control  px-2 py-4"
+                        placeholder="Name">
+                </div>
+                <div class="userEmail">
+                    <label>Email Address</label>
+                    <input #email (keyup)="showLabel(email)" type="email" class="form-control  px-2 py-4"
+                        placeholder="Email Address">
+                </div>
+                <div class="userPhone">
+                    <label>Phone Number</label>
+                    <input #phone (keyup)="showLabel(phone)" type="number" class="form-control  px-2 py-4"
+                        placeholder="Phone Number">
+                </div>
+                <div class="userName">
+                    <label>Message</label>
+                    <textarea #message (keyup)="showLabel(message)" type="text" class="form-control  px-2 py-4"
+                        placeholder="Message"></textarea>
+                </div>
+                <button class="px-3 py-3 mt-2 border-0 rounded-3 fs-5 text-white ">Send</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,143 @@
+<div class="portfolio position-relative py-5 mt-3">
+    <div class="container">
+        <div class="portfolio-body">
+            <div class="portfolio-title text-center mb-4">
+                <h2>PORTFOLIO</h2>
+                <span class="portfolio-icon my-3 position-relative">
+                    <i class="fa-solid fa-star fa-2x"></i>
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4  p-3">
+                    <div class="portfolio-box position-relative" #targetBox1 (click)="showModal(targetBox1)"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../../assets/images/cabin.png" alt="LOG CABIN" class="img-fluid rounded-3">
+                        <div
+                            class="portfolio-overlay d-flex rounded-3 justify-content-center align-items-center position-absolute">
+                            <i class="fa-solid fa-plus text-white fw-bold fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4  p-3">
+                    <div class="portfolio-box position-relative" #targetBox2 (click)="showModal(targetBox2)"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../../assets/images/cake.png" alt="TASTY CAKE" class="img-fluid rounded-3">
+                        <div
+                            class="portfolio-overlay d-flex rounded-3 justify-content-center align-items-center position-absolute">
+                            <i class="fa-solid fa-plus text-white fw-bold fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4  p-3">
+                    <div class="portfolio-box position-relative" #targetBox3 (click)="showModal(targetBox3)"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../../assets/images/circus.png" alt="CIRCUS TENT" class="img-fluid rounded-3">
+                        <div
+                            class="portfolio-overlay d-flex rounded-3 justify-content-center align-items-center position-absolute">
+                            <i class="fa-solid fa-plus text-white fw-bold fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4  p-3">
+                    <div class="portfolio-box position-relative" #targetBox4 (click)="showModal(targetBox4)"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../../assets/images/game.png" alt="CONTROLLER" class="img-fluid rounded-3">
+                        <div
+                            class="portfolio-overlay d-flex rounded-3 justify-content-center align-items-center position-absolute">
+                            <i class="fa-solid fa-plus text-white fw-bold fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4  p-3">
+                    <div class="portfolio-box position-relative" #targetBox5 (click)="showModal(targetBox5)"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../../assets/images/safe.png" alt="LOCKED SAFE" class="img-fluid rounded-3">
+                        <div
+                            class="portfolio-overlay d-flex rounded-3 justify-content-center align-items-center position-absolute">
+                            <i class="fa-solid fa-plus text-white fw-bold fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4  p-3">
+                    <div class="portfolio-box position-relative" #targetBox6 (click)="showModal(targetBox6)"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="../../assets/images/submarine.png" alt="SUBMARINE" class="img-fluid rounded-3">
+                        <div
+                            class="portfolio-overlay d-flex rounded-3 justify-content-center align-items-center position-absolute">
+                            <i class="fa-solid fa-plus text-white fw-bold fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- /* ==============>>>> MODAL Component <<<<==========* / -->
+<div class="modal  fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header position-relative">
+                <div class="modal-title text-center fs-4" id="exampleModalLabel">
+                    <h2 class="">TASTY CAKE</h2>
+                    <span class="modal-icon my-3 position-relative">
+                        <i class="fa-solid fa-star fa-1x"></i>
+                    </span>
+                </div>
+                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="fa-solid fa-xmark fa-2x me-2"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="" class="img-fluid">
+                <p class="my-2 text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil,
+                    molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod
+                    consequuntur itaque.
+                    Nam.
+                </p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn closeBtn" data-bs-dismiss="modal"><i
+                        class="fa-solid fa-xmark me-2"></i>Close Window</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- /* ==============>>>> Popup Component <<<<==========* / -->
+<!-- <div class="overlay">
+    <div class="portfolio-popup bg-info w-75 mx-auto  p-4 rounded-4">
+        <i class="fa-solid fa-xmark fa-3x fw-bold position-absolute"></i>
+        <div class="popup-body">
+            <div class="popup-title text-center mb-4">
+                <h2>TASTY CAKE</h2>
+                <span class="popup-icon my-3 position-relative">
+                    <i class="fa-solid fa-star fa-2x"></i>
+                </span>
+            </div>
+            <div class="popup-details w-75 mx-auto text-center">
+                <img src="../../assets/cake.png" alt="" class="img-fluid rounded-3">
+                <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                    nihil, molestias
+                    magnam,
+                    recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod
+                    consequuntur itaque.
+                    Nam.
+                </p>
+                <button class="px-3 py-2 text-white rounded-2" ><i class="fa-solid fa-xmark me-2"></i>Close Window</button>
+            </div>
+        </div>
+    </div>
+</div> -->
